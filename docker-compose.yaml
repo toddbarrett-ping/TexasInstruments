@@ -23,7 +23,7 @@ services:
         hard: 65535
     ports:
       - "8080:80"
-      - "7443:443"
+      - "8444:443"
     networks:
       - pingnet-dmz
       - pingnet-internal
@@ -82,7 +82,7 @@ services:
   pingdataconsole:
     image: ${PING_IDENTITY_DEVOPS_REGISTRY}/pingdataconsole:${PING_IDENTITY_DEVOPS_TAG}
     ports:
-      - "9443:8443"
+      - "8445:8443"
     networks:
       - pingnet-internal
 
